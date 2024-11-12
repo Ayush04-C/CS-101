@@ -6,7 +6,8 @@ void hanoi(int n, int a, int b) {
 	if (n <= 0) {
 		return;
 	}
-	// write recursive solution
+	return hanoi(n-1,b,a);
+	return hanoi(n-1,a,b);
 }
 
 int main() {
